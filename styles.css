@@ -11,7 +11,7 @@
     padding: 15px 30px;
     font-size: 18px;
     cursor: pointer;
-    background-color: #ff6b6b;
+    background-color: #4a90e2;
     border: none;
     border-radius: 5px;
     color: white;
@@ -19,7 +19,7 @@
 }
 
 #spaghettiButton:hover {
-    background-color: #ff5252;
+    background-color: #357abd;
 }
 
 #spaghettiButton.flash {
