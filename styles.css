@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+#spaghettiButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: transform 0.1s, background-color 0.3s;
+}
+
+#spaghettiButton:hover {
+    background-color: #ff5252;
+}
+
+#spaghettiButton.flash {
+    background-color: #ffd700;
+    transform: scale(1.1);
+}
+
+#numberDisplay {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+#monster {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M40,20 Q50,10 60,20 L80,40 L60,80 L40,80 L20,40 Z" fill="%23333"/><circle cx="35" cy="35" r="5" fill="red"/><circle cx="65" cy="35" r="5" fill="red"/></svg>');
+    background-size: 80% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#monster.visible {
+    opacity: 1;
+} 
